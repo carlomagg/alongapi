@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('drivers.urls')),
     path('', include('userroute.urls')),
     path('', include('passengers.urls')),
+    path('', include('bookrides.urls')),
     path('', include('accounts.urls')),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
